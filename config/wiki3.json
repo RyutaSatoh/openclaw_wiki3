@@ -2,6 +2,9 @@
   "bundle_dir": "raw/bundles",
   "run_dir": "raw/runs",
   "artifact_char_limit": 1800,
+  "lint": {
+    "stale_days": 10
+  },
   "upstream": {
     "workspace_root": "/home/mariryu/.openclaw/workspace",
     "china_promoted_globs": [

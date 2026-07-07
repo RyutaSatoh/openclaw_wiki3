@@ -4,6 +4,7 @@ This repository is the clean restart after `openclaw_wiki2`.
 
 ## Intent
 
+- Follow a bundle-first `Ingest / Query / Lint` shape.
 - Do not recreate the old `source page` layer here.
 - Prefer common raw bundles over channel-specific intermediate pages.
 - Keep Python dumb and inspectable.
@@ -14,13 +15,16 @@ This repository is the clean restart after `openclaw_wiki2`.
 
 ## Current workflow
 
-1. `ingest-upstream` writes common raw bundles.
-2. `prepare-openclaw` builds one family evidence pack and job manifest.
+1. `ingest` writes common raw bundles.
+2. `query-prepare` or `query-batch` builds evidence packs and job manifests.
 3. An OpenClaw turn writes decision/render JSON.
-4. `apply-openclaw` writes markdown and updates indexes/logs.
+4. `query-apply` writes markdown and updates indexes/logs.
+5. `lint` reports freshness and coverage gaps.
 
 ## Constraints
 
 - Prefer stdlib Python.
 - Keep visible synthesis sections in Japanese.
 - Avoid channel-specific logic unless it is strictly required for capture.
+- When adding new domains like `children` or `chat`, prefer new families or
+  family classes rather than new Python meaning-making layers.

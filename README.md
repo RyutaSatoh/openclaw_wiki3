@@ -1,41 +1,59 @@
 # openclaw_wiki3
 
-Bundle-first wiki prototype for OpenClaw.
+Bundle-first LLM wiki for OpenClaw.
 
-This repository intentionally avoids Python-authored source pages.
-The design goal is:
+`wiki3` is the clean restart after earlier source-page-heavy prototypes.
+The goal is to follow the Karpathy-style `Ingest / Query / Lint` shape while
+fitting OpenClaw's actual environment: cron turns, mixed channels, and
+Japanese human-facing syntheses.
 
-1. Capture channel-agnostic raw bundles
-2. Build evidence packs from bundles, not from heuristic source summaries
-3. Let the OpenClaw LLM decide `hold / update / create`
-4. Let the OpenClaw LLM render human-readable Japanese syntheses
-5. Keep Python narrow: ingest, retrieval, file write, bookkeeping
+## Core ideas
+
+1. `Ingest` stores thin raw bundles
+2. `Query` lets the OpenClaw LLM decide `hold / update / create`
+3. `Query` also lets the OpenClaw LLM render the visible synthesis in Japanese
+4. `Lint` checks freshness, section completeness, and bundle coverage gaps
+5. Python stays narrow: capture, retrieval, file write, and bookkeeping
 
 ## Layout
 
-- `raw/bundles/`: append-friendly raw bundle files
-- `raw/runs/`: evidence packs and LLM outputs
-- `wiki/`: human-facing syntheses
-- `schema/`: bundle and response schemas
-- `config/wiki3.json`: family definitions and upstream inputs
-- `scripts/wiki3.py`: minimal CLI
-- `ops/openclaw-batch-turn.md`: unified cron runbook
+- `raw/bundles/`: channel-agnostic raw bundles
+- `raw/runs/`: query manifests, evidence packs, lint reports, LLM outputs
+- `wiki/`: human-facing syntheses and index/log
+- `schema/`: bundle, prompt, and JSON schema docs
+- `config/wiki3.json`: family definitions, upstream inputs, lint settings
+- `scripts/wiki3.py`: CLI for `ingest`, `query-*`, and `lint`
+- `ops/openclaw-batch-turn.md`: unified OpenClaw batch runbook
 
 ## Current families
 
 - `china-tech-news`
 - `tailored-tech-news`
 
+## CLI
+
+```bash
+python3 scripts/wiki3.py ingest
+python3 scripts/wiki3.py query-prepare --family china-tech-news
+python3 scripts/wiki3.py query-batch
+python3 scripts/wiki3.py query-apply --job raw/runs/<job>.json
+python3 scripts/wiki3.py lint
+```
+
+Compatibility aliases from the first `wiki3` sketch still exist:
+`ingest-upstream`, `prepare-openclaw`, `prepare-batch`, `apply-openclaw`.
+
 ## Current scope
 
 - Ingest upstream news/cache artifacts into common raw bundles
 - Build family evidence packs from bundles
-- Batch-oriented OpenClaw handoff
-- Japanese visible syntheses
+- Run OpenClaw query jobs in batch
+- Render Japanese visible syntheses
+- Emit lint reports for quality gaps
 
-## Non-goals for first cut
+## Deliberate non-goals
 
 - Python-authored source pages
-- Rich ranking heuristics
-- Cross-family graph reasoning
-- Full migration from older repos
+- Rich routing heuristics baked into Python
+- Channel-specific durable interpretation during ingest
+- Full migration from older repos before the model is proven
