@@ -1,0 +1,58 @@
+{
+  "type": "object",
+  "required": [
+    "title",
+    "summary",
+    "sections"
+  ],
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "sections": {
+      "type": "object",
+      "required": [
+        "何が変わったか",
+        "なぜ重要か",
+        "現在のテーマ",
+        "今後の注目点",
+        "根拠ソース"
+      ],
+      "properties": {
+        "何が変わったか": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "なぜ重要か": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "現在のテーマ": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "今後の注目点": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "根拠ソース": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

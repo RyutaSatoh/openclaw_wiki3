@@ -1,0 +1,28 @@
+{
+  "id": "source.event.20260610.cron.daily.tailored.tech.news.brief.tailored.tec",
+  "ts": "2026-06-10T08:30:00+09:00",
+  "origin": "legacy_source_page",
+  "title": "event: Tailored tech news digest recurring topics detected (2 ongoing)",
+  "summary": "2026-06-10 の関心特化テックニュースで、直近 7 日にも出ていた継続テーマが 2 件見つかった。 主な継続テーマ: Home Assistant 2026.6、UI/zone automation を強化しつつ legacy template 削除が実運用の焦点に [home-assistant] は同一 fingerprint 0 回 / topic 3 回 / OpenClaw、2026.6.5系で月次パッチ番号へ移行し、session metadata の SQLite 移行は見送り [openclaw] は同一 fingerprint 0 回 / topic 3 回。",
+  "content": "2026-06-10 の関心特化テックニュースで、直近 7 日にも出ていた継続テーマが 2 件見つかった。 主な継続テーマ: Home Assistant 2026.6、UI/zone automation を強化しつつ legacy template 削除が実運用の焦点に [home-assistant] は同一 fingerprint 0 回 / topic 3 回 / OpenClaw、2026.6.5系で月次パッチ番号へ移行し、session metadata の SQLite 移行は見送り [openclaw] は同一 fingerprint 0 回 / topic 3 回。",
+  "topics": [
+    "event",
+    "ingest",
+    "monitoring",
+    "news",
+    "tech_news",
+    "wiki",
+    "home-assistant",
+    "openclaw"
+  ],
+  "artifacts": [
+    "\"/home/mariryu/.openclaw/workspace/news-cache/2026-06-10-tech-news-cache.json\"",
+    "\"https://www.home-assistant.io/blog/2026/06/03/release-20266/\"",
+    "\"https://github.com/openclaw/openclaw/releases\""
+  ],
+  "provenance": {
+    "source": "cron:daily-tailored-tech-news-brief",
+    "relative_path": "wiki/sources/event-20260610-cron-daily-tailored-tech-news-brief-tailored-tec.md"
+  },
+  "path": "/home/mariryu/.openclaw/workspace/wiki/sources/event-20260610-cron-daily-tailored-tech-news-brief-tailored-tec.md"
+}

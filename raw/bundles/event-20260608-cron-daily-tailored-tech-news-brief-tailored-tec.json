@@ -1,0 +1,30 @@
+{
+  "id": "source.event.20260608.cron.daily.tailored.tech.news.brief.tailored.tec",
+  "ts": "2026-06-08T08:30:00+09:00",
+  "origin": "legacy_source_page",
+  "title": "event: Tailored tech news digest recurring topics detected (3 ongoing)",
+  "summary": "2026-06-08 の関心特化テックニュースで、直近 7 日にも出ていた継続テーマが 3 件見つかった。 主な継続テーマ: Home Assistant 2026.6: entity 起点の card picker と community card 導線が実装 [home-assistant] は同一 fingerprint 0 回 / topic 3 回 / OpenClaw 2026.6.5-beta.2: bundled web_search と Anthropic 復旧まわりが前進 [openclaw] は同一 fingerprint 0 回 / topic 3 回 / Xiaomi EV World Model: 自動運転向け world model を reconstruction + generation で統合 [autonomous-driving] は同一 fingerprint 0 回 / topic 2 回。",
+  "content": "2026-06-08 の関心特化テックニュースで、直近 7 日にも出ていた継続テーマが 3 件見つかった。 主な継続テーマ: Home Assistant 2026.6: entity 起点の card picker と community card 導線が実装 [home-assistant] は同一 fingerprint 0 回 / topic 3 回 / OpenClaw 2026.6.5-beta.2: bundled web_search と Anthropic 復旧まわりが前進 [openclaw] は同一 fingerprint 0 回 / topic 3 回 / Xiaomi EV World Model: 自動運転向け world model を reconstruction + generation で統合 [autonomous-driving] は同一 fingerprint 0 回 / topic 2 回。",
+  "topics": [
+    "event",
+    "ingest",
+    "monitoring",
+    "news",
+    "tech_news",
+    "wiki",
+    "home-assistant",
+    "openclaw",
+    "autonomous-driving"
+  ],
+  "artifacts": [
+    "\"/home/mariryu/.openclaw/workspace/news-cache/2026-06-08-tech-news-cache.json\"",
+    "\"https://www.home-assistant.io/blog/2026/06/03/release-20266/\"",
+    "\"https://github.com/openclaw/openclaw/releases/tag/v2026.6.5-beta.2\"",
+    "\"https://arxiv.org/abs/2605.18137\""
+  ],
+  "provenance": {
+    "source": "cron:daily-tailored-tech-news-brief",
+    "relative_path": "wiki/sources/event-20260608-cron-daily-tailored-tech-news-brief-tailored-tec.md"
+  },
+  "path": "/home/mariryu/.openclaw/workspace/wiki/sources/event-20260608-cron-daily-tailored-tech-news-brief-tailored-tec.md"
+}

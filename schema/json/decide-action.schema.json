@@ -1,0 +1,50 @@
+{
+  "type": "object",
+  "required": [
+    "action",
+    "reason",
+    "target"
+  ],
+  "properties": {
+    "action": {
+      "type": "string",
+      "enum": [
+        "hold_source_only",
+        "update_existing",
+        "create_new"
+      ]
+    },
+    "reason": {
+      "type": "string"
+    },
+    "target": {
+      "type": "object",
+      "required": [
+        "slug",
+        "title",
+        "kind",
+        "page_path"
+      ],
+      "properties": {
+        "slug": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "kind": {
+          "type": "string"
+        },
+        "page_path": {
+          "type": "string"
+        }
+      }
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

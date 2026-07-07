@@ -1,0 +1,30 @@
+{
+  "id": "source.event.20260622.cron.daily.tailored.tech.news.brief.tailored.tec",
+  "ts": "2026-06-22T08:30:00+09:00",
+  "origin": "legacy_source_page",
+  "title": "event: Tailored tech news digest recurring topics detected (3 ongoing)",
+  "summary": "2026-06-22 の関心特化テックニュースで、直近 7 日にも出ていた継続テーマが 3 件見つかった。 主な継続テーマ: Home Assistant: device tracker entity model変更が実運用に波及 [home-assistant] は同一 fingerprint 0 回 / topic 1 回 / Sony IMX711: X線CMOSで高速・低雑音・photon-level計測を両立 [image-sensor] は同一 fingerprint 0 回 / topic 1 回 / Waymo が freeway工事区間進入で 3,871台を software recall [waymo] は同一 fingerprint 0 回 / topic 1 回。",
+  "content": "2026-06-22 の関心特化テックニュースで、直近 7 日にも出ていた継続テーマが 3 件見つかった。 主な継続テーマ: Home Assistant: device tracker entity model変更が実運用に波及 [home-assistant] は同一 fingerprint 0 回 / topic 1 回 / Sony IMX711: X線CMOSで高速・低雑音・photon-level計測を両立 [image-sensor] は同一 fingerprint 0 回 / topic 1 回 / Waymo が freeway工事区間進入で 3,871台を software recall [waymo] は同一 fingerprint 0 回 / topic 1 回。",
+  "topics": [
+    "event",
+    "ingest",
+    "monitoring",
+    "news",
+    "tech_news",
+    "wiki",
+    "home-assistant",
+    "image-sensor",
+    "waymo"
+  ],
+  "artifacts": [
+    "\"/home/mariryu/.openclaw/workspace/news-cache/2026-06-22-tech-news-cache.json\"",
+    "\"https://developers.home-assistant.io/blog/2026/06/15/device-tracker-changes/\"",
+    "\"https://www.sony-semicon.com/en/news/2026/2026060901.html\"",
+    "\"https://static.nhtsa.gov/odi/rcl/2026/RCLRPT-26E035-7637.pdf\""
+  ],
+  "provenance": {
+    "source": "cron:daily-tailored-tech-news-brief",
+    "relative_path": "wiki/sources/event-20260622-cron-daily-tailored-tech-news-brief-tailored-tec.md"
+  },
+  "path": "/home/mariryu/.openclaw/workspace/wiki/sources/event-20260622-cron-daily-tailored-tech-news-brief-tailored-tec.md"
+}

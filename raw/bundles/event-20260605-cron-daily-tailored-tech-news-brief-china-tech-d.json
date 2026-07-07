@@ -1,0 +1,30 @@
+{
+  "id": "source.event.20260605.cron.daily.tailored.tech.news.brief.tech.news.re",
+  "ts": "2026-06-05T08:30:00+09:00",
+  "origin": "legacy_source_page",
+  "title": "event: Tailored tech news digest recurring topics detected (5 ongoing)",
+  "summary": "2026-06-05 の関心特化テックニュースで、直近 7 日にも出ていた継続テーマが 5 件見つかった。 主な継続テーマ: DriveMAがDriving VLAでverifiable meta-actionsを提案 [autonomous-driving-research] は同一 fingerprint 0 回 / topic 1 回 / Home Assistant 2026.6後のlegacy template移行ヘルパーが実務上の本線に [home-assistant] は同一 fingerprint 0 回 / topic 3 回 / OpenAIが新メモリ基盤Dreamingを展開開始 [llm-ai] は同一 fingerprint 0 回 / topic 1 回。",
+  "content": "2026-06-05 の関心特化テックニュースで、直近 7 日にも出ていた継続テーマが 5 件見つかった。 主な継続テーマ: DriveMAがDriving VLAでverifiable meta-actionsを提案 [autonomous-driving-research] は同一 fingerprint 0 回 / topic 1 回 / Home Assistant 2026.6後のlegacy template移行ヘルパーが実務上の本線に [home-assistant] は同一 fingerprint 0 回 / topic 3 回 / OpenAIが新メモリ基盤Dreamingを展開開始 [llm-ai] は同一 fingerprint 0 回 / topic 1 回。",
+  "topics": [
+    "event",
+    "ingest",
+    "monitoring",
+    "news",
+    "tech_news",
+    "wiki",
+    "autonomous-driving-research",
+    "home-assistant",
+    "llm-ai"
+  ],
+  "artifacts": [
+    "\"/home/mariryu/.openclaw/workspace/news-cache/2026-06-05-tech-news-cache.json\"",
+    "\"https://arxiv.org/abs/2605.31271\"",
+    "\"https://community.home-assistant.io/t/removal-of-legacy-template-entities-in-2026-6/1011847\"",
+    "\"https://openai.com/index/chatgpt-memory-dreaming/\""
+  ],
+  "provenance": {
+    "source": "cron:daily-tailored-tech-news-brief",
+    "relative_path": "wiki/sources/event-20260605-cron-daily-tailored-tech-news-brief-china-tech-d.md"
+  },
+  "path": "/home/mariryu/.openclaw/workspace/wiki/sources/event-20260605-cron-daily-tailored-tech-news-brief-china-tech-d.md"
+}

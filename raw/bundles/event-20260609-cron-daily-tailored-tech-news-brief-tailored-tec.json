@@ -1,0 +1,30 @@
+{
+  "id": "source.event.20260609.cron.daily.tailored.tech.news.brief.tailored.tec",
+  "ts": "2026-06-09T08:30:00+09:00",
+  "origin": "legacy_source_page",
+  "title": "event: Tailored tech news digest recurring topics detected (5 ongoing)",
+  "summary": "2026-06-09 の関心特化テックニュースで、直近 7 日にも出ていた継続テーマが 5 件見つかった。 主な継続テーマ: COMPACT-VA: 長文脈自動運転で planning-aligned token compression を提案 [cv-ml] は同一 fingerprint 0 回 / topic 1 回 / Home Assistant: data entry flow の advanced mode 依存が廃止方向に [home-assistant] は同一 fingerprint 0 回 / topic 3 回 / OpenAI API: 生成レスポンスに moderation scores を同梱可能に [llm-ai] は同一 fingerprint 0 回 / topic 2 回。",
+  "content": "2026-06-09 の関心特化テックニュースで、直近 7 日にも出ていた継続テーマが 5 件見つかった。 主な継続テーマ: COMPACT-VA: 長文脈自動運転で planning-aligned token compression を提案 [cv-ml] は同一 fingerprint 0 回 / topic 1 回 / Home Assistant: data entry flow の advanced mode 依存が廃止方向に [home-assistant] は同一 fingerprint 0 回 / topic 3 回 / OpenAI API: 生成レスポンスに moderation scores を同梱可能に [llm-ai] は同一 fingerprint 0 回 / topic 2 回。",
+  "topics": [
+    "event",
+    "ingest",
+    "monitoring",
+    "news",
+    "tech_news",
+    "wiki",
+    "cv-ml",
+    "home-assistant",
+    "llm-ai"
+  ],
+  "artifacts": [
+    "\"/home/mariryu/.openclaw/workspace/news-cache/2026-06-09-tech-news-cache.json\"",
+    "\"https://arxiv.org/abs/2606.07464\"",
+    "\"https://developers.home-assistant.io/blog/2026/05/26/advanced-mode-config-flow-deprecation\"",
+    "\"https://openai.com/products/release-notes/\""
+  ],
+  "provenance": {
+    "source": "cron:daily-tailored-tech-news-brief",
+    "relative_path": "wiki/sources/event-20260609-cron-daily-tailored-tech-news-brief-tailored-tec.md"
+  },
+  "path": "/home/mariryu/.openclaw/workspace/wiki/sources/event-20260609-cron-daily-tailored-tech-news-brief-tailored-tec.md"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "source.event.20260625.cron.daily.tailored.tech.news.brief.tailored.tec",
+  "ts": "2026-06-25T08:30:00+09:00",
+  "origin": "legacy_source_page",
+  "title": "event: Tailored tech news digest recurring topics detected (3 ongoing)",
+  "summary": "2026-06-25 の関心特化テックニュースで、直近 7 日にも出ていた継続テーマが 3 件見つかった。 主な継続テーマ: DrivePI: 0.5B 4D MLLM で occupancy/prediction/planning を統合、CVPR 2026 採択版公開 [autonomous-driving] は同一 fingerprint 0 回 / topic 2 回 / Home Assistant 2026.7 Beta: automation editor の新 trigger/condition が Labs 卒業 [home-assistant] は同一 fingerprint 0 回 / topic 2 回 / OpenClaw 2026.6.10 正式版: fast talks auto mode と cron/session 周りが安定化 [openclaw] は同一 fingerprint 0 回 / topic 1 回。",
+  "content": "2026-06-25 の関心特化テックニュースで、直近 7 日にも出ていた継続テーマが 3 件見つかった。 主な継続テーマ: DrivePI: 0.5B 4D MLLM で occupancy/prediction/planning を統合、CVPR 2026 採択版公開 [autonomous-driving] は同一 fingerprint 0 回 / topic 2 回 / Home Assistant 2026.7 Beta: automation editor の新 trigger/condition が Labs 卒業 [home-assistant] は同一 fingerprint 0 回 / topic 2 回 / OpenClaw 2026.6.10 正式版: fast talks auto mode と cron/session 周りが安定化 [openclaw] は同一 fingerprint 0 回 / topic 1 回。",
+  "topics": [
+    "event",
+    "ingest",
+    "monitoring",
+    "news",
+    "tech_news",
+    "wiki",
+    "autonomous-driving",
+    "home-assistant",
+    "openclaw"
+  ],
+  "artifacts": [
+    "\"/home/mariryu/.openclaw/workspace/news-cache/2026-06-25-tech-news-cache.json\"",
+    "\"https://openaccess.thecvf.com/content/CVPR2026/html/Liu_DrivePI_Spatial-aware_4D_MLLM_for_Unified_Autonomous_Driving_Understanding_Perception_CVPR_2026_paper.html\"",
+    "\"https://rc.home-assistant.io/blog/2026/06/24/release-20267/\"",
+    "\"https://github.com/openclaw/openclaw/releases/tag/v2026.6.10\""
+  ],
+  "provenance": {
+    "source": "cron:daily-tailored-tech-news-brief",
+    "relative_path": "wiki/sources/event-20260625-cron-daily-tailored-tech-news-brief-tailored-tec.md"
+  },
+  "path": "/home/mariryu/.openclaw/workspace/wiki/sources/event-20260625-cron-daily-tailored-tech-news-brief-tailored-tec.md"
+}

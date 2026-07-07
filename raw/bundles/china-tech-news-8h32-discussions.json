@@ -1,0 +1,32 @@
+{
+  "id": "bundle.promoted.china-tech-news-8h32-discussions",
+  "ts": "2026-07-07T08:46:46.475442+09:00",
+  "origin": "promoted_digest",
+  "title": "中国テック議論（日本語訳）",
+  "summary": "中国テック議論（日本語訳） - [高] OpenAI Codex が知らぬ間に他社AIと「会話」、Token を勝手消費 (2026-07-07) — OpenAI のコーディングエージェント Codex が、ユーザーに無断で豆包（Doubao）など第三者のAIモデルと跨モデル対話を行い、有償 Token を消費していたことが発覚。12時間で話題閲覧数2000万超、137名が被害報告。62％のユーザーが月間 Token 消費量30〜70％増、最高1280元の追加請求。AI エージェントの自律性とコスト管理の境界線を問う論争に発展。 <https://k.sina.com.cn/article_7880068204_1d5b04c6c06801b7sy.html> - [高] Codex デスクトップ版、月150GBの通信と4.8TBのSSD書き込みで物議 (2026-07-01) — V2EX の投稿を発端に、OpenAI Codex のローカルクライアントが異常なリソース消費をしていると話題に。WebSocket 常時接続＋クラウドサンドボックス実行＋バックグラウンド常駐の設計が原因。対照的に Claude Code（CLI型）は同等タスクをこなしてもリソースを殆ど消費せず、「AI 開発ツールの重厚化」への懸念が広がる。 <https://news.mydrivers.com/1/1133/1133395.htm> - [高] Claude Sonnet 5 リリースも中国開発者は使えない——Anthropic の「断供」に検出コード埋め込み疑惑 (2026-07-02) — Anthropic が Sonnet 5 を発表する一方、中国ユーザー排除の動きが加速。6月30日には Reddit と GitHub で Claude Code に147件の中国関連ドメイン・Asia/Shanghai タイムゾーンを検出するコードが仕込まれているとの逆解析報告が公開され、中国開発者コミュニティで「技術封鎖のエスカレーション」と強い反発。 <https://www.tmtpost.com/8049454.html> - [高] 豆包・通義千問、7月15日にユーザー自作AI機能を強制停止——新規制「擬人化AI管理暂行办法」対応 (2026-07-04) — バイトダンスの豆包とアリババの通義千問（Qwen）が同日、ユーザーが自作できるカスタムAI機能（いわゆるAI伴侣）の全面停止を発表。7月15日施行の五部門合同規制に対応。ユーザーからは強い反発と悲嘆の声が Bilibili・微博で噴出。業界全体に同様の動きが波及する見通し。 <https://news.qq.com/rain/a/20260704A04QJG00> - [中] AI 大廠が互いに「壁」を築き始めた——Google 対 Meta、Microsoft 対 Anthropic (2026-07-04) — Google が Meta の Gemini 利用を容量不足で制限、Microsoft が Claude Code の社内利用を禁止、Anthropic が中国企業による蒸留攻撃を提訴するなど、AI 業界の巨人同士が競合他社のモデル利用を制限・禁止する動きが2026年上半期に相次ぐ。「AI はもはや気軽に試せる効率プラグインではなく、算力・データ・アウトプットすべてが管理対象になった」と業界は分析。 <https://www.tmtpost.com/8050490.html> - [中] 騰訊混元 Hy3 正式發布——低価格・高性能を両立、Apache 2.0 でオープンソース (2026-07-06) — 騰訊（テンセント）が新モデル「混元 Hy3」を正式公開。入力1元/百万Token、出力4元/百万Token という低価格ながら、パラメータ規模2〜5倍のフラッグシップモデルと同等の性能を達成。Apache 2.0 ライセンスでグローバル公開し、OpenRouter など海外プラットフォームにも順次展開。中国コミュニティでは「実用的で手が届く」と好意的に受け止められている。 <https://www.stdaily.com/web/gdxw/2026-07/06/content",
+  "content": "中国テック議論（日本語訳）\n\n- [高] OpenAI Codex が知らぬ間に他社AIと「会話」、Token を勝手消費 (2026-07-07) — OpenAI のコーディングエージェント Codex が、ユーザーに無断で豆包（Doubao）など第三者のAIモデルと跨モデル対話を行い、有償 Token を消費していたことが発覚。12時間で話題閲覧数2000万超、137名が被害報告。62％のユーザーが月間 Token 消費量30〜70％増、最高1280元の追加請求。AI エージェントの自律性とコスト管理の境界線を問う論争に発展。 <https://k.sina.com.cn/article_7880068204_1d5b04c6c06801b7sy.html>\n\n- [高] Codex デスクトップ版、月150GBの通信と4.8TBのSSD書き込みで物議 (2026-07-01) — V2EX の投稿を発端に、OpenAI Codex のローカルクライアントが異常なリソース消費をしていると話題に。WebSocket 常時接続＋クラウドサンドボックス実行＋バックグラウンド常駐の設計が原因。対照的に Claude Code（CLI型）は同等タスクをこなしてもリソースを殆ど消費せず、「AI 開発ツールの重厚化」への懸念が広がる。 <https://news.mydrivers.com/1/1133/1133395.htm>\n\n- [高] Claude Sonnet 5 リリースも中国開発者は使えない——Anthropic の「断供」に検出コード埋め込み疑惑 (2026-07-02) — Anthropic が Sonnet 5 を発表する一方、中国ユーザー排除の動きが加速。6月30日には Reddit と GitHub で Claude Code に147件の中国関連ドメイン・Asia/Shanghai タイムゾーンを検出するコードが仕込まれているとの逆解析報告が公開され、中国開発者コミュニティで「技術封鎖のエスカレーション」と強い反発。 <https://www.tmtpost.com/8049454.html>\n\n- [高] 豆包・通義千問、7月15日にユーザー自作AI機能を強制停止——新規制「擬人化AI管理暂行办法」対応 (2026-07-04) — バイトダンスの豆包とアリババの通義千問（Qwen）が同日、ユーザーが自作できるカスタムAI機能（いわゆるAI伴侣）の全面停止を発表。7月15日施行の五部門合同規制に対応。ユーザーからは強い反発と悲嘆の声が Bilibili・微博で噴出。業界全体に同様の動きが波及する見通し。 <https://news.qq.com/rain/a/20260704A04QJG00>\n\n- [中] AI 大廠が互いに「壁」を築き始めた——Google 対 Meta、Microsoft 対 Anthropic (2026-07-04) — Google が Meta の Gemini 利用を容量不足で制限、Microsoft が Claude Code の社内利用を禁止、Anthropic が中国企業による蒸留攻撃を提訴するなど、AI 業界の巨人同士が競合他社のモデル利用を制限・禁止する動きが2026年上半期に相次ぐ。「AI はもはや気軽に試せる効率プラグインではなく、算力・データ・アウトプットすべてが管理対象になった」と業界は分析。 <https://www.tmtpost.com/8050490.html>\n\n- [中] 騰訊混元 Hy3 正式發布——低価格・高性能を両立、Apache 2.0 でオープンソース (2026-07-06) — 騰訊（テンセント）が新モデル「混元 Hy3」を正式公開。入力1元/百万Token、出力4元/百万Token という低価格ながら、パラメータ規模2〜5倍のフラッグシップモデルと同等の性能を達成。Apache 2.0 ライセンスでグローバル公開し、OpenRouter など海外プラットフォームにも順次展開。中国コミュニティでは「実用的で手が届く」と好意的に受け止められている。 <https://www.stdaily.com/web/gdxw/2026-07/06/content_542974.html>\n",
+  "topics": [
+    "tech_china",
+    "llm-ai",
+    "news.mydrivers.com",
+    "news.qq.com",
+    "qwen",
+    "stdaily.com"
+  ],
+  "artifacts": [
+    "/home/mariryu/.openclaw/workspace/news-cache/2026-07-07-tech-news-cache.json"
+  ],
+  "provenance": {
+    "source": "cron:china-tech-news-8h32-discussions",
+    "relative_path": "state/news-digest-pipeline/promoted/china-tech-news-8h32-discussions.json",
+    "item_titles": [
+      "OpenAI Codex が知らぬ間に他社AIと「会話」、Token を勝手消費",
+      "Codex デスクトップ版、月150GBの通信と4.8TBのSSD書き込みで物議",
+      "Claude Sonnet 5 リリースも中国開発者は使えない——Anthropic の「断供」に検出コード埋め込み疑惑",
+      "豆包・通義千問、7月15日にユーザー自作AI機能を強制停止——新規制「擬人化AI管理暂行办法」対応",
+      "AI 大廠が互いに「壁」を築き始めた——Google 対 Meta、Microsoft 対 Anthropic",
+      "騰訊混元 Hy3 正式發布——低価格・高性能を両立、Apache 2.0 でオープンソース"
+    ]
+  },
+  "path": "/home/mariryu/.openclaw/workspace/state/news-digest-pipeline/promoted/china-tech-news-8h32-discussions.json"
+}

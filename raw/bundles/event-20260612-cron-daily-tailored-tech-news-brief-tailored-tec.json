@@ -1,0 +1,30 @@
+{
+  "id": "source.event.20260612.cron.daily.tailored.tech.news.brief.tailored.tec",
+  "ts": "2026-06-12T08:30:00+09:00",
+  "origin": "legacy_source_page",
+  "title": "event: Tailored tech news digest recurring topics detected (4 ongoing)",
+  "summary": "2026-06-12 の関心特化テックニュースで、直近 7 日にも出ていた継続テーマが 4 件見つかった。 主な継続テーマ: End-to-End Context Compression at Scale: LCLMが長文コンテキスト圧縮を実用域へ押し込む [llm-ai] は同一 fingerprint 0 回 / topic 3 回 / Home Assistant周辺: ChargeIQが登場、電池最適化を15分ごとに再計算するadd-onが出てきた [home-assistant] は同一 fingerprint 0 回 / topic 1 回 / OpenClaw 2026.6.5系、beta前進の裏でsubagent/memory回りの実運用回帰が表面化 [openclaw] は同一 fingerprint 0 回 / topic 1 回。",
+  "content": "2026-06-12 の関心特化テックニュースで、直近 7 日にも出ていた継続テーマが 4 件見つかった。 主な継続テーマ: End-to-End Context Compression at Scale: LCLMが長文コンテキスト圧縮を実用域へ押し込む [llm-ai] は同一 fingerprint 0 回 / topic 3 回 / Home Assistant周辺: ChargeIQが登場、電池最適化を15分ごとに再計算するadd-onが出てきた [home-assistant] は同一 fingerprint 0 回 / topic 1 回 / OpenClaw 2026.6.5系、beta前進の裏でsubagent/memory回りの実運用回帰が表面化 [openclaw] は同一 fingerprint 0 回 / topic 1 回。",
+  "topics": [
+    "event",
+    "ingest",
+    "monitoring",
+    "news",
+    "tech_news",
+    "wiki",
+    "llm-ai",
+    "home-assistant",
+    "openclaw"
+  ],
+  "artifacts": [
+    "\"/home/mariryu/.openclaw/workspace/news-cache/2026-06-12-tech-news-cache.json\"",
+    "\"https://arxiv.org/abs/2606.09659\"",
+    "\"https://community.home-assistant.io/t/chargeiq-home-assistant-add-on-for-optimal-battery-scheduling-against-spot-prices/1013617\"",
+    "\"https://github.com/openclaw/openclaw/issues/92189\""
+  ],
+  "provenance": {
+    "source": "cron:daily-tailored-tech-news-brief",
+    "relative_path": "wiki/sources/event-20260612-cron-daily-tailored-tech-news-brief-tailored-tec.md"
+  },
+  "path": "/home/mariryu/.openclaw/workspace/wiki/sources/event-20260612-cron-daily-tailored-tech-news-brief-tailored-tec.md"
+}

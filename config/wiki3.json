@@ -1,0 +1,72 @@
+{
+  "bundle_dir": "raw/bundles",
+  "run_dir": "raw/runs",
+  "artifact_char_limit": 1800,
+  "upstream": {
+    "workspace_root": "/home/mariryu/.openclaw/workspace",
+    "china_promoted_globs": [
+      "state/news-digest-pipeline/promoted/china-tech-news-8h30-news.json",
+      "state/news-digest-pipeline/promoted/china-tech-news-8h32-discussions.json"
+    ],
+    "tailored_source_globs": [
+      "wiki/sources/event-*-daily-tailored-tech-news-brief-*.md"
+    ]
+  },
+  "families": {
+    "china-tech-news": {
+      "kind": "intelligence",
+      "title": "China Tech News",
+      "slug": "china-tech-news",
+      "page_path": "wiki/syntheses/china-tech-news.md",
+      "bundle_filters": {
+        "origins": [
+          "promoted_digest"
+        ],
+        "topics_any": [
+          "tech_china",
+          "unitree",
+          "qwen",
+          "deepseek",
+          "huawei",
+          "humanoid-robotics",
+          "llm-ai"
+        ]
+      },
+      "max_bundles": 16,
+      "sections": [
+        "何が変わったか",
+        "なぜ重要か",
+        "現在のテーマ",
+        "今後の注目点",
+        "根拠ソース"
+      ]
+    },
+    "tailored-tech-news": {
+      "kind": "intelligence",
+      "title": "関心特化テックニュース",
+      "slug": "tailored-tech-news",
+      "page_path": "wiki/syntheses/tailored-tech-news.md",
+      "bundle_filters": {
+        "origins": [
+          "legacy_source_page"
+        ],
+        "topics_any": [
+          "tech_news",
+          "openclaw",
+          "home-assistant",
+          "autonomous-driving",
+          "image-sensor",
+          "llm-ai"
+        ]
+      },
+      "max_bundles": 16,
+      "sections": [
+        "何が変わったか",
+        "なぜ重要か",
+        "現在のテーマ",
+        "今後の注目点",
+        "根拠ソース"
+      ]
+    }
+  }
+}

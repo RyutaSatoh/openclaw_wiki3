@@ -1,0 +1,30 @@
+{
+  "id": "source.event.20260611.cron.daily.tailored.tech.news.brief.tailored.tec",
+  "ts": "2026-06-11T08:30:00+09:00",
+  "origin": "legacy_source_page",
+  "title": "event: Tailored tech news digest recurring topics detected (5 ongoing)",
+  "summary": "2026-06-11 の関心特化テックニュースで、直近 7 日にも出ていた継続テーマが 5 件見つかった。 主な継続テーマ: Home Assistant 周辺: Zigbee IR blaster を native InfraredEntity 化する HACS 実装 [home-assistant] は同一 fingerprint 0 回 / topic 3 回 / Kwai Keye-VL-2.0-30B-A3B 公開 [llm-ai] は同一 fingerprint 0 回 / topic 2 回 / Mirage: Latent Spatial Memory for Video World Models [cv-ml] は同一 fingerprint 0 回 / topic 1 回。",
+  "content": "2026-06-11 の関心特化テックニュースで、直近 7 日にも出ていた継続テーマが 5 件見つかった。 主な継続テーマ: Home Assistant 周辺: Zigbee IR blaster を native InfraredEntity 化する HACS 実装 [home-assistant] は同一 fingerprint 0 回 / topic 3 回 / Kwai Keye-VL-2.0-30B-A3B 公開 [llm-ai] は同一 fingerprint 0 回 / topic 2 回 / Mirage: Latent Spatial Memory for Video World Models [cv-ml] は同一 fingerprint 0 回 / topic 1 回。",
+  "topics": [
+    "event",
+    "ingest",
+    "monitoring",
+    "news",
+    "tech_news",
+    "wiki",
+    "home-assistant",
+    "llm-ai",
+    "cv-ml"
+  ],
+  "artifacts": [
+    "\"/home/mariryu/.openclaw/workspace/news-cache/2026-06-11-tech-news-cache.json\"",
+    "\"https://community.home-assistant.io/t/zigbee-ir-blasters-as-native-home-assistant-infrared-entities/1011786\"",
+    "\"https://arxiv.org/abs/2606.10651\"",
+    "\"https://arxiv.org/abs/2606.09828\""
+  ],
+  "provenance": {
+    "source": "cron:daily-tailored-tech-news-brief",
+    "relative_path": "wiki/sources/event-20260611-cron-daily-tailored-tech-news-brief-tailored-tec.md"
+  },
+  "path": "/home/mariryu/.openclaw/workspace/wiki/sources/event-20260611-cron-daily-tailored-tech-news-brief-tailored-tec.md"
+}

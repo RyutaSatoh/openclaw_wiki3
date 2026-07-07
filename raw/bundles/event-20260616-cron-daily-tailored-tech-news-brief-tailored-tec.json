@@ -1,0 +1,30 @@
+{
+  "id": "source.event.20260616.cron.daily.tailored.tech.news.brief.tailored.tec",
+  "ts": "2026-06-16T08:30:00+09:00",
+  "origin": "legacy_source_page",
+  "title": "event: Tailored tech news digest recurring topics detected (4 ongoing)",
+  "summary": "2026-06-16 の関心特化テックニュースで、直近 7 日にも出ていた継続テーマが 4 件見つかった。 主な継続テーマ: BLUE: 自動運転VLAで必要なフレームだけ言語 reasoning を起動 [autonomous-driving] は同一 fingerprint 0 回 / topic 1 回 / EurekAgent: workflow より environment engineering が agent 性能を決める [llm-ai] は同一 fingerprint 0 回 / topic 6 回 / Home Assistant 2026.6 系は 6.6.3 まで patch 進行、community では login/iOS まわりの不具合報告 [home-assistant] は同一 fingerprint 0 回 / topic 1 回。",
+  "content": "2026-06-16 の関心特化テックニュースで、直近 7 日にも出ていた継続テーマが 4 件見つかった。 主な継続テーマ: BLUE: 自動運転VLAで必要なフレームだけ言語 reasoning を起動 [autonomous-driving] は同一 fingerprint 0 回 / topic 1 回 / EurekAgent: workflow より environment engineering が agent 性能を決める [llm-ai] は同一 fingerprint 0 回 / topic 6 回 / Home Assistant 2026.6 系は 6.6.3 まで patch 進行、community では login/iOS まわりの不具合報告 [home-assistant] は同一 fingerprint 0 回 / topic 1 回。",
+  "topics": [
+    "event",
+    "ingest",
+    "monitoring",
+    "news",
+    "tech_news",
+    "wiki",
+    "autonomous-driving",
+    "llm-ai",
+    "home-assistant"
+  ],
+  "artifacts": [
+    "\"/home/mariryu/.openclaw/workspace/news-cache/2026-06-16-tech-news-cache.json\"",
+    "\"https://arxiv.org/abs/2606.08684\"",
+    "\"https://arxiv.org/abs/2606.13662\"",
+    "\"https://www.home-assistant.io/changelogs/core-2026.6/\""
+  ],
+  "provenance": {
+    "source": "cron:daily-tailored-tech-news-brief",
+    "relative_path": "wiki/sources/event-20260616-cron-daily-tailored-tech-news-brief-tailored-tec.md"
+  },
+  "path": "/home/mariryu/.openclaw/workspace/wiki/sources/event-20260616-cron-daily-tailored-tech-news-brief-tailored-tec.md"
+}
