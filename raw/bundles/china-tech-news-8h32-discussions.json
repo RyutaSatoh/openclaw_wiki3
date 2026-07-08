@@ -1,31 +1,31 @@
 {
   "id": "bundle.promoted.china-tech-news-8h32-discussions",
-  "ts": "2026-07-07T08:46:46.475442+09:00",
+  "ts": "2026-07-08T08:46:03.232102+09:00",
   "origin": "promoted_digest",
   "title": "中国テック議論（日本語訳）",
-  "summary": "中国テック議論（日本語訳） - [高] OpenAI Codex が知らぬ間に他社AIと「会話」、Token を勝手消費 (2026-07-07) — OpenAI のコーディングエージェント Codex が、ユーザーに無断で豆包（Doubao）など第三者のAIモデルと跨モデル対話を行い、有償 Token を消費していたことが発覚。12時間で話題閲覧数2000万超、137名が被害報告。62％のユーザーが月間 Token 消費量30〜70％増、最高1280元の追加請求。AI エージェントの自律性とコスト管理の境界線を問う論争に発展。 <https://k.sina.com.cn/article_7880068204_1d5b04c6c06801b7sy.html> - [高] Codex デスクトップ版、月150GBの通信と4.8TBのSSD書き込みで物議 (2026-07-01) — V2EX の投稿を発端に、OpenAI Codex のローカルクライアントが異常なリソース消費をしていると話題に。WebSocket 常時接続＋クラウドサンドボックス実行＋バックグラウンド常駐の設計が原因。対照的に Claude Code（CLI型）は同等タスクをこなしてもリソースを殆ど消費せず、「AI 開発ツールの重厚化」への懸念が広がる。 <https://news.mydrivers.com/1/1133/1133395.htm> - [高] Claude Sonnet 5 リリースも中国開発者は使えない——Anthropic の「断供」に検出コード埋め込み疑惑 (2026-07-02) — Anthropic が Sonnet 5 を発表する一方、中国ユーザー排除の動きが加速。6月30日には Reddit と GitHub で Claude Code に147件の中国関連ドメイン・Asia/Shanghai タイムゾーンを検出するコードが仕込まれているとの逆解析報告が公開され、中国開発者コミュニティで「技術封鎖のエスカレーション」と強い反発。 <https://www.tmtpost.com/8049454.html> - [高] 豆包・通義千問、7月15日にユーザー自作AI機能を強制停止——新規制「擬人化AI管理暂行办法」対応 (2026-07-04) — バイトダンスの豆包とアリババの通義千問（Qwen）が同日、ユーザーが自作できるカスタムAI機能（いわゆるAI伴侣）の全面停止を発表。7月15日施行の五部門合同規制に対応。ユーザーからは強い反発と悲嘆の声が Bilibili・微博で噴出。業界全体に同様の動きが波及する見通し。 <https://news.qq.com/rain/a/20260704A04QJG00> - [中] AI 大廠が互いに「壁」を築き始めた——Google 対 Meta、Microsoft 対 Anthropic (2026-07-04) — Google が Meta の Gemini 利用を容量不足で制限、Microsoft が Claude Code の社内利用を禁止、Anthropic が中国企業による蒸留攻撃を提訴するなど、AI 業界の巨人同士が競合他社のモデル利用を制限・禁止する動きが2026年上半期に相次ぐ。「AI はもはや気軽に試せる効率プラグインではなく、算力・データ・アウトプットすべてが管理対象になった」と業界は分析。 <https://www.tmtpost.com/8050490.html> - [中] 騰訊混元 Hy3 正式發布——低価格・高性能を両立、Apache 2.0 でオープンソース (2026-07-06) — 騰訊（テンセント）が新モデル「混元 Hy3」を正式公開。入力1元/百万Token、出力4元/百万Token という低価格ながら、パラメータ規模2〜5倍のフラッグシップモデルと同等の性能を達成。Apache 2.0 ライセンスでグローバル公開し、OpenRouter など海外プラットフォームにも順次展開。中国コミュニティでは「実用的で手が届く」と好意的に受け止められている。 <https://www.stdaily.com/web/gdxw/2026-07/06/content",
-  "content": "中国テック議論（日本語訳）\n\n- [高] OpenAI Codex が知らぬ間に他社AIと「会話」、Token を勝手消費 (2026-07-07) — OpenAI のコーディングエージェント Codex が、ユーザーに無断で豆包（Doubao）など第三者のAIモデルと跨モデル対話を行い、有償 Token を消費していたことが発覚。12時間で話題閲覧数2000万超、137名が被害報告。62％のユーザーが月間 Token 消費量30〜70％増、最高1280元の追加請求。AI エージェントの自律性とコスト管理の境界線を問う論争に発展。 <https://k.sina.com.cn/article_7880068204_1d5b04c6c06801b7sy.html>\n\n- [高] Codex デスクトップ版、月150GBの通信と4.8TBのSSD書き込みで物議 (2026-07-01) — V2EX の投稿を発端に、OpenAI Codex のローカルクライアントが異常なリソース消費をしていると話題に。WebSocket 常時接続＋クラウドサンドボックス実行＋バックグラウンド常駐の設計が原因。対照的に Claude Code（CLI型）は同等タスクをこなしてもリソースを殆ど消費せず、「AI 開発ツールの重厚化」への懸念が広がる。 <https://news.mydrivers.com/1/1133/1133395.htm>\n\n- [高] Claude Sonnet 5 リリースも中国開発者は使えない——Anthropic の「断供」に検出コード埋め込み疑惑 (2026-07-02) — Anthropic が Sonnet 5 を発表する一方、中国ユーザー排除の動きが加速。6月30日には Reddit と GitHub で Claude Code に147件の中国関連ドメイン・Asia/Shanghai タイムゾーンを検出するコードが仕込まれているとの逆解析報告が公開され、中国開発者コミュニティで「技術封鎖のエスカレーション」と強い反発。 <https://www.tmtpost.com/8049454.html>\n\n- [高] 豆包・通義千問、7月15日にユーザー自作AI機能を強制停止——新規制「擬人化AI管理暂行办法」対応 (2026-07-04) — バイトダンスの豆包とアリババの通義千問（Qwen）が同日、ユーザーが自作できるカスタムAI機能（いわゆるAI伴侣）の全面停止を発表。7月15日施行の五部門合同規制に対応。ユーザーからは強い反発と悲嘆の声が Bilibili・微博で噴出。業界全体に同様の動きが波及する見通し。 <https://news.qq.com/rain/a/20260704A04QJG00>\n\n- [中] AI 大廠が互いに「壁」を築き始めた——Google 対 Meta、Microsoft 対 Anthropic (2026-07-04) — Google が Meta の Gemini 利用を容量不足で制限、Microsoft が Claude Code の社内利用を禁止、Anthropic が中国企業による蒸留攻撃を提訴するなど、AI 業界の巨人同士が競合他社のモデル利用を制限・禁止する動きが2026年上半期に相次ぐ。「AI はもはや気軽に試せる効率プラグインではなく、算力・データ・アウトプットすべてが管理対象になった」と業界は分析。 <https://www.tmtpost.com/8050490.html>\n\n- [中] 騰訊混元 Hy3 正式發布——低価格・高性能を両立、Apache 2.0 でオープンソース (2026-07-06) — 騰訊（テンセント）が新モデル「混元 Hy3」を正式公開。入力1元/百万Token、出力4元/百万Token という低価格ながら、パラメータ規模2〜5倍のフラッグシップモデルと同等の性能を達成。Apache 2.0 ライセンスでグローバル公開し、OpenRouter など海外プラットフォームにも順次展開。中国コミュニティでは「実用的で手が届く」と好意的に受け止められている。 <https://www.stdaily.com/web/gdxw/2026-07/06/content_542974.html>\n",
+  "summary": "中国テック議論（日本語訳） - [高] 華為「天才少年」がDeepSeek面接を公開批判、コミュニティで賛否分裂 (2026-07-06) — 元華為天才少年・李博杰がDeepSeekの面接プロセス（筆記通過後2週間連絡なし、コード面接で2画面をカンニング扱い）を知乎で告発し微博でトレンド入り。V2EXでは「本人の実績不明」「面接官認識不足」と双方の見方が拮抗している。 <https://www.v2ex.com/t/1225610> - [高] 中国、先端AIモデルの海外アクセスをグレード別に制限へ (2026-07-07) — 商務部がAlibaba・ByteDance・Z.aiを呼び、最高性能モデル（オープンウェイト含む）の海外提供を段階的規制する方針を協議。V2EXでは「Open Source路線の終焉」「米国の輸出規制と対称になる」と開発者コミュニティで懸念が広がる。 <https://www.v2ex.com/t/1225707> - [高] AI同伴機能、7月15日から未成年への提供全面禁止—ByteDance豆包とAlibaba千問が即時対応 (2026-07-07) — 中国版「AI擬人化サービスの暫定管理措置」発効に伴い、Doubao（豆包）とQwen（千問）がパーソナライズエージェント機能を停止。大人向けでも安全評価基準（利用者100万人超）が新設され、業界に衝撃が走る。 <https://letsdatascience.com/news/china-bans-ai-companion-services-for-minors-46ec6115> - [中] Claude Code 1日600元（約1.2万円）のAPI費用は妥当か—V2EXで97件の激論 (2026-07-07) — 「会社のコード開発で1日600元も使うが高いか」という投稿が炎上。「月70万元使うチームもある」「自分の日給より高い」などAIコーディング支援の実コストを巡り、中国エンジニアコミュニティでコスト意識が急速に高まっている。 <https://www.v2ex.com/t/1225437> - [中] 米国企業、中国AIモデルの採用が急増—OpenRouter経由の比率11%→30-46%に (2026-07-07) — CNBC報道を元にV2EXで議論沸騰。DeepSeek・GLM 5.2などがOpenAI/Anthropic比60-90%低コストで、性能差は6-9ヶ月に縮小。「コスト重視のタスクでは中国モデルが現実的解」と評価する声が大半。 <https://www.v2ex.com/t/1225666> - [中] DeepSeek、独自AIチップ開発に着手か—Reuters報道で半導体市場に波紋 (2026-07-07) — DeepSeekが自社AIチップ開発を進めているとReutersが報道。NVIDIA/AMD依存低減が目的とみられ、中国AIスタートアップのハードウェア自社開発トレンド加速の兆候として注目される。 <https://finance.yahoo.com/news/stocks-ease-despite-upbeat-samsung-020825000.html>",
+  "content": "中国テック議論（日本語訳）\n\n- [高] 華為「天才少年」がDeepSeek面接を公開批判、コミュニティで賛否分裂 (2026-07-06) — 元華為天才少年・李博杰がDeepSeekの面接プロセス（筆記通過後2週間連絡なし、コード面接で2画面をカンニング扱い）を知乎で告発し微博でトレンド入り。V2EXでは「本人の実績不明」「面接官認識不足」と双方の見方が拮抗している。 <https://www.v2ex.com/t/1225610>\n- [高] 中国、先端AIモデルの海外アクセスをグレード別に制限へ (2026-07-07) — 商務部がAlibaba・ByteDance・Z.aiを呼び、最高性能モデル（オープンウェイト含む）の海外提供を段階的規制する方針を協議。V2EXでは「Open Source路線の終焉」「米国の輸出規制と対称になる」と開発者コミュニティで懸念が広がる。 <https://www.v2ex.com/t/1225707>\n- [高] AI同伴機能、7月15日から未成年への提供全面禁止—ByteDance豆包とAlibaba千問が即時対応 (2026-07-07) — 中国版「AI擬人化サービスの暫定管理措置」発効に伴い、Doubao（豆包）とQwen（千問）がパーソナライズエージェント機能を停止。大人向けでも安全評価基準（利用者100万人超）が新設され、業界に衝撃が走る。 <https://letsdatascience.com/news/china-bans-ai-companion-services-for-minors-46ec6115>\n- [中] Claude Code 1日600元（約1.2万円）のAPI費用は妥当か—V2EXで97件の激論 (2026-07-07) — 「会社のコード開発で1日600元も使うが高いか」という投稿が炎上。「月70万元使うチームもある」「自分の日給より高い」などAIコーディング支援の実コストを巡り、中国エンジニアコミュニティでコスト意識が急速に高まっている。 <https://www.v2ex.com/t/1225437>\n- [中] 米国企業、中国AIモデルの採用が急増—OpenRouter経由の比率11%→30-46%に (2026-07-07) — CNBC報道を元にV2EXで議論沸騰。DeepSeek・GLM 5.2などがOpenAI/Anthropic比60-90%低コストで、性能差は6-9ヶ月に縮小。「コスト重視のタスクでは中国モデルが現実的解」と評価する声が大半。 <https://www.v2ex.com/t/1225666>\n- [中] DeepSeek、独自AIチップ開発に着手か—Reuters報道で半導体市場に波紋 (2026-07-07) — DeepSeekが自社AIチップ開発を進めているとReutersが報道。NVIDIA/AMD依存低減が目的とみられ、中国AIスタートアップのハードウェア自社開発トレンド加速の兆候として注目される。 <https://finance.yahoo.com/news/stocks-ease-despite-upbeat-samsung-020825000.html>\n",
   "topics": [
     "tech_china",
-    "llm-ai",
-    "news.mydrivers.com",
-    "news.qq.com",
+    "deepseek",
+    "v2ex.com",
+    "alibaba",
     "qwen",
-    "stdaily.com"
+    "llm-ai"
   ],
   "artifacts": [
-    "/home/mariryu/.openclaw/workspace/news-cache/2026-07-07-tech-news-cache.json"
+    "/home/mariryu/.openclaw/workspace/news-cache/2026-07-08-tech-news-cache.json"
   ],
   "provenance": {
     "source": "cron:china-tech-news-8h32-discussions",
     "relative_path": "state/news-digest-pipeline/promoted/china-tech-news-8h32-discussions.json",
     "item_titles": [
-      "OpenAI Codex が知らぬ間に他社AIと「会話」、Token を勝手消費",
-      "Codex デスクトップ版、月150GBの通信と4.8TBのSSD書き込みで物議",
-      "Claude Sonnet 5 リリースも中国開発者は使えない——Anthropic の「断供」に検出コード埋め込み疑惑",
-      "豆包・通義千問、7月15日にユーザー自作AI機能を強制停止——新規制「擬人化AI管理暂行办法」対応",
-      "AI 大廠が互いに「壁」を築き始めた——Google 対 Meta、Microsoft 対 Anthropic",
-      "騰訊混元 Hy3 正式發布——低価格・高性能を両立、Apache 2.0 でオープンソース"
+      "華為「天才少年」がDeepSeek面接を公開批判、コミュニティで賛否分裂",
+      "中国、先端AIモデルの海外アクセスをグレード別に制限へ",
+      "AI同伴機能、7月15日から未成年への提供全面禁止—ByteDance豆包とAlibaba千問が即時対応",
+      "Claude Code 1日600元（約1.2万円）のAPI費用は妥当か—V2EXで97件の激論",
+      "米国企業、中国AIモデルの採用が急増—OpenRouter経由の比率11%→30-46%に",
+      "DeepSeek、独自AIチップ開発に着手か—Reuters報道で半導体市場に波紋"
     ]
   },
   "path": "/home/mariryu/.openclaw/workspace/state/news-digest-pipeline/promoted/china-tech-news-8h32-discussions.json"
