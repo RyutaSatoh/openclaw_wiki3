@@ -1,0 +1,26 @@
+{
+  "id": "source.event.20260709.cron.daily.tailored.tech.news.brief.tailored.tec",
+  "ts": "2026-07-09T08:30:00+09:00",
+  "origin": "legacy_source_page",
+  "title": "event: Tailored tech news digest recurring topics detected (1 ongoing)",
+  "summary": "2026-07-09 の関心特化テックニュースで、直近 7 日にも出ていた継続テーマが 1 件見つかった。 主な継続テーマ: SWE-EVO 公開、coding agent の弱点が長期進化タスクでかなり露出 [llm-ai] は同一 fingerprint 0 回 / topic 4 回。",
+  "content": "2026-07-09 の関心特化テックニュースで、直近 7 日にも出ていた継続テーマが 1 件見つかった。 主な継続テーマ: SWE-EVO 公開、coding agent の弱点が長期進化タスクでかなり露出 [llm-ai] は同一 fingerprint 0 回 / topic 4 回。",
+  "topics": [
+    "event",
+    "ingest",
+    "monitoring",
+    "news",
+    "tech_news",
+    "wiki",
+    "llm-ai"
+  ],
+  "artifacts": [
+    "\"/home/mariryu/.openclaw/workspace/news-cache/2026-07-09-tech-news-cache.json\"",
+    "\"https://github.com/SWE-EVO/SWE-EVO\""
+  ],
+  "provenance": {
+    "source": "cron:daily-tailored-tech-news-brief",
+    "relative_path": "wiki/sources/event-20260709-cron-daily-tailored-tech-news-brief-tailored-tec.md"
+  },
+  "path": "/home/mariryu/.openclaw/workspace/wiki/sources/event-20260709-cron-daily-tailored-tech-news-brief-tailored-tec.md"
+}
