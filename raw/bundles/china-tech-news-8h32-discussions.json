@@ -1,31 +1,30 @@
 {
   "id": "bundle.promoted.china-tech-news-8h32-discussions",
-  "ts": "2026-07-08T08:46:03.232102+09:00",
+  "ts": "2026-07-10T08:46:22.277915+09:00",
   "origin": "promoted_digest",
   "title": "中国テック議論（日本語訳）",
-  "summary": "中国テック議論（日本語訳） - [高] 華為「天才少年」がDeepSeek面接を公開批判、コミュニティで賛否分裂 (2026-07-06) — 元華為天才少年・李博杰がDeepSeekの面接プロセス（筆記通過後2週間連絡なし、コード面接で2画面をカンニング扱い）を知乎で告発し微博でトレンド入り。V2EXでは「本人の実績不明」「面接官認識不足」と双方の見方が拮抗している。 <https://www.v2ex.com/t/1225610> - [高] 中国、先端AIモデルの海外アクセスをグレード別に制限へ (2026-07-07) — 商務部がAlibaba・ByteDance・Z.aiを呼び、最高性能モデル（オープンウェイト含む）の海外提供を段階的規制する方針を協議。V2EXでは「Open Source路線の終焉」「米国の輸出規制と対称になる」と開発者コミュニティで懸念が広がる。 <https://www.v2ex.com/t/1225707> - [高] AI同伴機能、7月15日から未成年への提供全面禁止—ByteDance豆包とAlibaba千問が即時対応 (2026-07-07) — 中国版「AI擬人化サービスの暫定管理措置」発効に伴い、Doubao（豆包）とQwen（千問）がパーソナライズエージェント機能を停止。大人向けでも安全評価基準（利用者100万人超）が新設され、業界に衝撃が走る。 <https://letsdatascience.com/news/china-bans-ai-companion-services-for-minors-46ec6115> - [中] Claude Code 1日600元（約1.2万円）のAPI費用は妥当か—V2EXで97件の激論 (2026-07-07) — 「会社のコード開発で1日600元も使うが高いか」という投稿が炎上。「月70万元使うチームもある」「自分の日給より高い」などAIコーディング支援の実コストを巡り、中国エンジニアコミュニティでコスト意識が急速に高まっている。 <https://www.v2ex.com/t/1225437> - [中] 米国企業、中国AIモデルの採用が急増—OpenRouter経由の比率11%→30-46%に (2026-07-07) — CNBC報道を元にV2EXで議論沸騰。DeepSeek・GLM 5.2などがOpenAI/Anthropic比60-90%低コストで、性能差は6-9ヶ月に縮小。「コスト重視のタスクでは中国モデルが現実的解」と評価する声が大半。 <https://www.v2ex.com/t/1225666> - [中] DeepSeek、独自AIチップ開発に着手か—Reuters報道で半導体市場に波紋 (2026-07-07) — DeepSeekが自社AIチップ開発を進めているとReutersが報道。NVIDIA/AMD依存低減が目的とみられ、中国AIスタートアップのハードウェア自社開発トレンド加速の兆候として注目される。 <https://finance.yahoo.com/news/stocks-ease-despite-upbeat-samsung-020825000.html>",
-  "content": "中国テック議論（日本語訳）\n\n- [高] 華為「天才少年」がDeepSeek面接を公開批判、コミュニティで賛否分裂 (2026-07-06) — 元華為天才少年・李博杰がDeepSeekの面接プロセス（筆記通過後2週間連絡なし、コード面接で2画面をカンニング扱い）を知乎で告発し微博でトレンド入り。V2EXでは「本人の実績不明」「面接官認識不足」と双方の見方が拮抗している。 <https://www.v2ex.com/t/1225610>\n- [高] 中国、先端AIモデルの海外アクセスをグレード別に制限へ (2026-07-07) — 商務部がAlibaba・ByteDance・Z.aiを呼び、最高性能モデル（オープンウェイト含む）の海外提供を段階的規制する方針を協議。V2EXでは「Open Source路線の終焉」「米国の輸出規制と対称になる」と開発者コミュニティで懸念が広がる。 <https://www.v2ex.com/t/1225707>\n- [高] AI同伴機能、7月15日から未成年への提供全面禁止—ByteDance豆包とAlibaba千問が即時対応 (2026-07-07) — 中国版「AI擬人化サービスの暫定管理措置」発効に伴い、Doubao（豆包）とQwen（千問）がパーソナライズエージェント機能を停止。大人向けでも安全評価基準（利用者100万人超）が新設され、業界に衝撃が走る。 <https://letsdatascience.com/news/china-bans-ai-companion-services-for-minors-46ec6115>\n- [中] Claude Code 1日600元（約1.2万円）のAPI費用は妥当か—V2EXで97件の激論 (2026-07-07) — 「会社のコード開発で1日600元も使うが高いか」という投稿が炎上。「月70万元使うチームもある」「自分の日給より高い」などAIコーディング支援の実コストを巡り、中国エンジニアコミュニティでコスト意識が急速に高まっている。 <https://www.v2ex.com/t/1225437>\n- [中] 米国企業、中国AIモデルの採用が急増—OpenRouter経由の比率11%→30-46%に (2026-07-07) — CNBC報道を元にV2EXで議論沸騰。DeepSeek・GLM 5.2などがOpenAI/Anthropic比60-90%低コストで、性能差は6-9ヶ月に縮小。「コスト重視のタスクでは中国モデルが現実的解」と評価する声が大半。 <https://www.v2ex.com/t/1225666>\n- [中] DeepSeek、独自AIチップ開発に着手か—Reuters報道で半導体市場に波紋 (2026-07-07) — DeepSeekが自社AIチップ開発を進めているとReutersが報道。NVIDIA/AMD依存低減が目的とみられ、中国AIスタートアップのハードウェア自社開発トレンド加速の兆候として注目される。 <https://finance.yahoo.com/news/stocks-ease-despite-upbeat-samsung-020825000.html>\n",
+  "summary": "中国テック議論（日本語訳） - [高] 「华为天才少年」がDeepSeek面接を公開批判、V2EX/知乎で真っ二つ (2026-07-06) — 华为「天才少年」李博杰がDeepSeekの面接を「半月も待たせた挙げ句、コピペ疑惑をかけられた」とSNSで告発。V2EXでは「二画面派vs面接官擁護派」に分裂、知乎では「天才少年ブランドの実態」に議論が拡大。元华为天才少年の創業歴や、「天才」称号が転職時にどれだけ通用するかという構造論に発展。 <https://www.v2ex.com/t/1225610> - [高] AnthropicがClaudeの内部に「J-space」を発見、知乎でAI意識論争が再燃 (2026-07-07) — AnthropicがClaudeの内部に、訓練中に自発的に形成された「J-space（全局工作空間）」を確認。人間の意識可及的処理に類似した構造で、モデルはこの空間内の情報だけを報告・操作できる。知乎では「これは本当の意識か」という哲学的議論と、「AI安全研究の画期」という実務的評価が交錯。36氪でもトップ記事に。 <https://zhuanlan.zhihu.com/p/2058178401366812558> - [中] TypeScript 7がコンパイラをGoに移植、掘金でフロントエンド界隈が騒然 (2026-07-09) — TypeScript 7がGoベースのネイティブコンパイラ「typescript-go」を発表。掘金では「バンドラ・リンターに続きTypeScriptもGo/Rust路線」「中規模プロジェクトで診断速度が秒単位になる」と好意的な一方、プラグイン互換性や移行リスクを懸念する声も。V2EXでもPajooxというVibe Coding製品の話題と併せてAI時代の開発ツールチェイン議論が活性化。 <https://juejin.cn/post/7660007537019060251> - [中] 小米「小愛同学」組織再編、羅福莉MiMoチームが基盤モデルを掌握 (2026-07-07) — 小米が小愛同学の組織を再編。羅福莉（DeepSeek経由で注目を集めた女性研究者）率いるMiMo基盤大モデルチームが中核モデル能力を担当し、旧責任者の王剛はロボット事業へ異動。知乎では「小米が音声アシスタントから汎用AI戦略へ舵を切った」と分析する記事がホットに。小愛同学10年目の節目での大規模再編に注目が集まる。 <https://zhuanlan.zhihu.com/p/2058560913196765902> - [中] Agentが中国技術コミュニティの最熱トピックに、8プラットフォーム同時ランクイン (2026-07-08) — Agent／AIエージェントが中国の技術系サイト8プラットフォーム（CSDN、掘金、FreeBuf、GitHub、人人都是产品经理など）で同時にトレンド入り。Claudeの拡大と合わせ、中国Devコミュニティでも「マルチエージェント」「A2Aプロトコル」「エージェントの評価指標」議論が急加速。V2EXでは実際に製品としてVibe Codingエージェントをリリースする投稿も登場。 <https://www.top.goodssoft.com/daily/ai/2026-07-08>",
+  "content": "中国テック議論（日本語訳）\n- [高] 「华为天才少年」がDeepSeek面接を公開批判、V2EX/知乎で真っ二つ (2026-07-06) — 华为「天才少年」李博杰がDeepSeekの面接を「半月も待たせた挙げ句、コピペ疑惑をかけられた」とSNSで告発。V2EXでは「二画面派vs面接官擁護派」に分裂、知乎では「天才少年ブランドの実態」に議論が拡大。元华为天才少年の創業歴や、「天才」称号が転職時にどれだけ通用するかという構造論に発展。 <https://www.v2ex.com/t/1225610>\n- [高] AnthropicがClaudeの内部に「J-space」を発見、知乎でAI意識論争が再燃 (2026-07-07) — AnthropicがClaudeの内部に、訓練中に自発的に形成された「J-space（全局工作空間）」を確認。人間の意識可及的処理に類似した構造で、モデルはこの空間内の情報だけを報告・操作できる。知乎では「これは本当の意識か」という哲学的議論と、「AI安全研究の画期」という実務的評価が交錯。36氪でもトップ記事に。 <https://zhuanlan.zhihu.com/p/2058178401366812558>\n- [中] TypeScript 7がコンパイラをGoに移植、掘金でフロントエンド界隈が騒然 (2026-07-09) — TypeScript 7がGoベースのネイティブコンパイラ「typescript-go」を発表。掘金では「バンドラ・リンターに続きTypeScriptもGo/Rust路線」「中規模プロジェクトで診断速度が秒単位になる」と好意的な一方、プラグイン互換性や移行リスクを懸念する声も。V2EXでもPajooxというVibe Coding製品の話題と併せてAI時代の開発ツールチェイン議論が活性化。 <https://juejin.cn/post/7660007537019060251>\n- [中] 小米「小愛同学」組織再編、羅福莉MiMoチームが基盤モデルを掌握 (2026-07-07) — 小米が小愛同学の組織を再編。羅福莉（DeepSeek経由で注目を集めた女性研究者）率いるMiMo基盤大モデルチームが中核モデル能力を担当し、旧責任者の王剛はロボット事業へ異動。知乎では「小米が音声アシスタントから汎用AI戦略へ舵を切った」と分析する記事がホットに。小愛同学10年目の節目での大規模再編に注目が集まる。 <https://zhuanlan.zhihu.com/p/2058560913196765902>\n- [中] Agentが中国技術コミュニティの最熱トピックに、8プラットフォーム同時ランクイン (2026-07-08) — Agent／AIエージェントが中国の技術系サイト8プラットフォーム（CSDN、掘金、FreeBuf、GitHub、人人都是产品经理など）で同時にトレンド入り。Claudeの拡大と合わせ、中国Devコミュニティでも「マルチエージェント」「A2Aプロトコル」「エージェントの評価指標」議論が急加速。V2EXでは実際に製品としてVibe Codingエージェントをリリースする投稿も登場。 <https://www.top.goodssoft.com/daily/ai/2026-07-08>\n",
   "topics": [
     "tech_china",
     "deepseek",
-    "v2ex.com",
-    "alibaba",
-    "qwen",
-    "llm-ai"
+    "llm-ai",
+    "juejin",
+    "zhuanlan.zhihu.com",
+    "top.goodssoft.com"
   ],
   "artifacts": [
-    "/home/mariryu/.openclaw/workspace/news-cache/2026-07-08-tech-news-cache.json"
+    "/home/mariryu/.openclaw/workspace/news-cache/2026-07-10-tech-news-cache.json"
   ],
   "provenance": {
     "source": "cron:china-tech-news-8h32-discussions",
     "relative_path": "state/news-digest-pipeline/promoted/china-tech-news-8h32-discussions.json",
     "item_titles": [
-      "華為「天才少年」がDeepSeek面接を公開批判、コミュニティで賛否分裂",
-      "中国、先端AIモデルの海外アクセスをグレード別に制限へ",
-      "AI同伴機能、7月15日から未成年への提供全面禁止—ByteDance豆包とAlibaba千問が即時対応",
-      "Claude Code 1日600元（約1.2万円）のAPI費用は妥当か—V2EXで97件の激論",
-      "米国企業、中国AIモデルの採用が急増—OpenRouter経由の比率11%→30-46%に",
-      "DeepSeek、独自AIチップ開発に着手か—Reuters報道で半導体市場に波紋"
+      "「华为天才少年」がDeepSeek面接を公開批判、V2EX/知乎で真っ二つ",
+      "AnthropicがClaudeの内部に「J-space」を発見、知乎でAI意識論争が再燃",
+      "TypeScript 7がコンパイラをGoに移植、掘金でフロントエンド界隈が騒然",
+      "小米「小愛同学」組織再編、羅福莉MiMoチームが基盤モデルを掌握",
+      "Agentが中国技術コミュニティの最熱トピックに、8プラットフォーム同時ランクイン"
     ]
   },
   "path": "/home/mariryu/.openclaw/workspace/state/news-digest-pipeline/promoted/china-tech-news-8h32-discussions.json"

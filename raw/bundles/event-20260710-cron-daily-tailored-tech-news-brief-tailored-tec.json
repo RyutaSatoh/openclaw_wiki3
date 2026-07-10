@@ -1,0 +1,28 @@
+{
+  "id": "source.event.20260710.cron.daily.tailored.tech.news.brief.tailored.tec",
+  "ts": "2026-07-10T08:30:00+09:00",
+  "origin": "legacy_source_page",
+  "title": "event: Tailored tech news digest recurring topics detected (2 ongoing)",
+  "summary": "2026-07-10 の関心特化テックニュースで、直近 7 日にも出ていた継続テーマが 2 件見つかった。 主な継続テーマ: ImagingBench 公開、agentic AI の計算イメージング理解を正面から測り始めた [cv-ml] は同一 fingerprint 0 回 / topic 1 回 / Waymo が 4都市で fully autonomous 運行準備、IONIQ 5 でも自律走行開始 [autonomous-driving] は同一 fingerprint 0 回 / topic 1 回。",
+  "content": "2026-07-10 の関心特化テックニュースで、直近 7 日にも出ていた継続テーマが 2 件見つかった。 主な継続テーマ: ImagingBench 公開、agentic AI の計算イメージング理解を正面から測り始めた [cv-ml] は同一 fingerprint 0 回 / topic 1 回 / Waymo が 4都市で fully autonomous 運行準備、IONIQ 5 でも自律走行開始 [autonomous-driving] は同一 fingerprint 0 回 / topic 1 回。",
+  "topics": [
+    "event",
+    "ingest",
+    "monitoring",
+    "news",
+    "tech_news",
+    "wiki",
+    "cv-ml",
+    "autonomous-driving"
+  ],
+  "artifacts": [
+    "\"/home/mariryu/.openclaw/workspace/news-cache/2026-07-10-tech-news-cache.json\"",
+    "\"https://arxiv.org/abs/2607.07189\"",
+    "\"https://waymo.com/blog/shorts/ro-den-lv-sd-tmpa/\""
+  ],
+  "provenance": {
+    "source": "cron:daily-tailored-tech-news-brief",
+    "relative_path": "wiki/sources/event-20260710-cron-daily-tailored-tech-news-brief-tailored-tec.md"
+  },
+  "path": "/home/mariryu/.openclaw/workspace/wiki/sources/event-20260710-cron-daily-tailored-tech-news-brief-tailored-tec.md"
+}

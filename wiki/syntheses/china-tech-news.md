@@ -2,7 +2,7 @@
 title: China Tech News
 slug: china-tech-news
 kind: intelligence
-updated_at: '2026-07-09'
+updated_at: '2026-07-10'
 bundle_ids:
 - bundle.promoted.china-tech-news-8h32-discussions
 - bundle.promoted.china-tech-news-8h30-news
@@ -10,7 +10,7 @@ bundle_ids:
 
 # China Tech News
 
-中国AIでは、性能競争と同時に「誰に何を開放するか」の統制が前面に出てきた。海外アクセス制限、AI companion の停止、Claude の社内禁止、自前チップ化、Huawei の端末優位が同じ週に並び、モデルだけでなく運用・計算資源・配布経路まで含めた再編が進んでいる。
+中国 AI では、性能競争に加えて「どこまで開放し、どこを締めるか」がいっそう前面に出てきた。DeepSeek の面接告発はコミュニティの評価分裂を映し、商務部の海外提供制限、Doubao/Qwen の AI companion・自作エージェント停止、Alibaba の Claude 社内禁止が、同じ週に統制強化の線として並んだ。さらに DeepSeek の推論向け自社チップ構想と Huawei の販売優位が、モデルだけでなく計算資源と端末の自立も争点になっていることを示した。
 
 ## 何が変わったか
 
@@ -48,4 +48,5 @@ bundle_ids:
 
 - bundle.promoted.china-tech-news-8h32-discussions
 - bundle.promoted.china-tech-news-8h30-news
+- /home/mariryu/.openclaw/workspace/news-cache/2026-07-10-tech-news-cache.json
 - /home/mariryu/.openclaw/workspace/news-cache/2026-07-08-tech-news-cache.json
