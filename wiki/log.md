@@ -38,3 +38,11 @@
 ## [2026-07-11 01:09:35Z] update_existing | china-tech-news
 - target: `wiki/syntheses/china-tech-news.md`
 - reason: 既存の China Tech News は、今回の bundles でも中国 AI の開放/統制、Agent 機能停止、自前チップ志向、Huawei の端末優位という同じ読解層が強化されており、継続更新が自然。
+
+## [2026-07-11 08:09:12Z] restructure:hold_structure | china-tech-news
+- target: `wiki/restructure/china-tech-news.md`
+- reason: 中国 AI の統制強化、機能停止、計算基盤の内製化、端末側の底堅さが同じ読み筋にまとまっており、現時点では一枚の総合観測ページとして十分に一貫しているため。
+
+## [2026-07-11 08:09:13Z] restructure:hold_structure | tailored-tech-news
+- target: `wiki/restructure/tailored-tech-news.md`
+- reason: このページは単発ニュースではなく、Home Assistant、OpenClaw、llm-ai、自動運転の継続観測という共通目的でまとまっており、現状は一つの関心マップとして成立しているため。
