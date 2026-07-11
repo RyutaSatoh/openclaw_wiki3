@@ -30,3 +30,11 @@
 ## [2026-07-10 01:08:38Z] update_existing | tailored-tech-news
 - target: `wiki/syntheses/tailored-tech-news.md`
 - reason: 既存の関心特化テックニュースは Home Assistant / OpenClaw / Claude Science / Waymo の継続観測ページで、今回の bundles は SWE-EVO と ImagingBench を追加して同じ継続観測レイヤーを深めているため。
+
+## [2026-07-11 01:09:35Z] update_existing | tailored-tech-news
+- target: `wiki/syntheses/tailored-tech-news.md`
+- reason: 関心特化テックニュースは既存の継続監視ページで、今回の bundles も直近の recurring topic 検出を積み上げる内容なので、新規作成より既存更新が適切。
+
+## [2026-07-11 01:09:35Z] update_existing | china-tech-news
+- target: `wiki/syntheses/china-tech-news.md`
+- reason: 既存の China Tech News は、今回の bundles でも中国 AI の開放/統制、Agent 機能停止、自前チップ志向、Huawei の端末優位という同じ読解層が強化されており、継続更新が自然。
