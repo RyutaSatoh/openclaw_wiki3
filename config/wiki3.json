@@ -3,7 +3,10 @@
   "run_dir": "raw/runs",
   "artifact_char_limit": 1800,
   "lint": {
-    "stale_days": 10
+    "stale_days": 10,
+    "restructure_bundle_count": 10,
+    "restructure_topic_count": 5,
+    "restructure_page_chars": 1800
   },
   "upstream": {
     "workspace_root": "/home/mariryu/.openclaw/workspace",

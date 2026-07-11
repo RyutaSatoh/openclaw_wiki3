@@ -20,8 +20,10 @@ ROOT = Path(__file__).resolve().parents[1]
 CONFIG_PATH = ROOT / "config" / "wiki3.json"
 DECIDE_PROMPT_PATH = ROOT / "schema" / "prompts" / "decide-action.md"
 RENDER_PROMPT_PATH = ROOT / "schema" / "prompts" / "render-synthesis.md"
+RESTRUCTURE_PROMPT_PATH = ROOT / "schema" / "prompts" / "restructure-page.md"
 DECIDE_SCHEMA_PATH = ROOT / "schema" / "json" / "decide-action.schema.json"
 RENDER_SCHEMA_PATH = ROOT / "schema" / "json" / "render-synthesis.schema.json"
+RESTRUCTURE_SCHEMA_PATH = ROOT / "schema" / "json" / "restructure-page.schema.json"
 
 
 @dataclass
@@ -335,6 +337,65 @@ def build_evidence_pack(config: dict[str, Any], family: str) -> dict[str, Any]:
     }
 
 
+def topic_counts_for_bundles(bundles: list[Bundle]) -> list[dict[str, Any]]:
+    counts: dict[str, int] = {}
+    bundle_ids: dict[str, list[str]] = {}
+    for bundle in bundles:
+        for topic in bundle.topics:
+            counts[topic] = counts.get(topic, 0) + 1
+            bundle_ids.setdefault(topic, []).append(bundle.id)
+    rows = []
+    for topic, count in sorted(counts.items(), key=lambda item: (-item[1], item[0])):
+        rows.append({"topic": topic, "count": count, "bundle_ids": bundle_ids.get(topic, [])[:8]})
+    return rows
+
+
+def page_signals(page: dict[str, Any] | None, bundles: list[Bundle]) -> dict[str, Any]:
+    content = ""
+    if page:
+        content = str(page.get("content") or "")
+    return {
+        "bundle_count": len(bundles),
+        "distinct_topics": len({topic for bundle in bundles for topic in bundle.topics}),
+        "section_count": len(page.get("sections") or []) if page else 0,
+        "page_char_count": len(content),
+        "has_existing_page": page is not None,
+    }
+
+
+def build_restructure_pack(config: dict[str, Any], family: str) -> dict[str, Any]:
+    family_cfg = family_config(config, family)
+    page_path = ROOT / family_cfg["page_path"]
+    page = page_snapshot(page_path)
+    bundles = bundles_for_family(config, family)
+    return {
+        "phase": "restructure",
+        "family": family,
+        "generated_at": now_stamp(),
+        "family_config": {
+            "kind": family_cfg["kind"],
+            "title": family_cfg["title"],
+            "slug": family_cfg["slug"],
+            "page_path": family_cfg["page_path"],
+        },
+        "existing_page": page,
+        "page_signals": page_signals(page, bundles),
+        "topic_counts": topic_counts_for_bundles(bundles),
+        "bundles": [
+            {
+                "id": bundle.id,
+                "ts": bundle.ts,
+                "origin": bundle.origin,
+                "title": bundle.title,
+                "summary": bundle.summary,
+                "topics": bundle.topics,
+                "provenance": bundle.provenance,
+            }
+            for bundle in bundles
+        ],
+    }
+
+
 def save_run_json(config: dict[str, Any], stem: str, payload: dict[str, Any]) -> Path:
     path = ROOT / config["run_dir"] / f"{stem}.json"
     dump_json(path, payload)
@@ -424,6 +485,31 @@ def build_query_batch(config: dict[str, Any], families: list[str]) -> Path:
     return save_run_json(config, f"{manifest['generated_at']}-query-batch", manifest)
 
 
+def build_restructure_job(config: dict[str, Any], family: str) -> Path:
+    pack = build_restructure_pack(config, family)
+    stem = f"{pack['generated_at']}-{family}"
+    evidence_path = save_run_json(config, f"{stem}-restructure-evidence", pack)
+    job = {
+        "phase": "restructure",
+        "family": family,
+        "generated_at": pack["generated_at"],
+        "evidence_pack_path": str(evidence_path),
+        "proposal_output_path": str(ROOT / config["run_dir"] / f"{stem}-restructure.json"),
+        "prompt_path": str(RESTRUCTURE_PROMPT_PATH),
+        "schema_path": str(RESTRUCTURE_SCHEMA_PATH),
+    }
+    return save_run_json(config, f"{stem}-restructure-job", job)
+
+
+def build_restructure_batch(config: dict[str, Any], families: list[str]) -> Path:
+    jobs = []
+    for family in families:
+        job_path = build_restructure_job(config, family)
+        jobs.append({"family": family, "job_path": str(job_path)})
+    manifest = {"phase": "restructure", "generated_at": now_stamp(), "families": jobs}
+    return save_run_json(config, f"{manifest['generated_at']}-restructure-batch", manifest)
+
+
 def apply_query_job(job_path: Path) -> str:
     job = load_json(job_path)
     decision = load_json(Path(job["decision_output_path"]))
@@ -444,6 +530,58 @@ def apply_query_job(job_path: Path) -> str:
     return str(page_path)
 
 
+def render_restructure_report(pack: dict[str, Any], proposal: dict[str, Any]) -> str:
+    lines = [
+        f"# Restructure Proposal: {pack['family']}",
+        "",
+        f"- generated_at: `{pack['generated_at']}`",
+        f"- current_page: `{pack['family_config']['page_path']}`",
+        f"- action: `{proposal['action']}`",
+        "",
+        "## Why",
+        "",
+        f"{proposal['reason']}",
+        "",
+    ]
+    if proposal.get("summary"):
+        lines.extend(["## Summary", "", proposal["summary"], ""])
+    if proposal.get("proposed_pages"):
+        lines.extend(["## Proposed Pages", ""])
+        for page in proposal["proposed_pages"]:
+            lines.append(f"### {page['title']} (`{page['slug']}`)")
+            lines.append("")
+            lines.append(f"- role: {page['role']}")
+            if page.get("seed_topics"):
+                lines.append(f"- seed_topics: {', '.join(page['seed_topics'])}")
+            if page.get("seed_bundle_ids"):
+                lines.append(f"- seed_bundles: {', '.join(page['seed_bundle_ids'])}")
+            lines.append(f"- summary: {page['summary']}")
+            lines.append("")
+    if proposal.get("link_actions"):
+        lines.extend(["## Link Actions", ""])
+        for action in proposal["link_actions"]:
+            lines.append(f"- `{action['kind']}`: `{action['from']}` -> `{action['to']}` ({action['reason']})")
+        lines.append("")
+    if proposal.get("notes"):
+        lines.extend(["## Notes", ""])
+        for note in proposal["notes"]:
+            lines.append(f"- {note}")
+        lines.append("")
+    return "\n".join(lines).rstrip() + "\n"
+
+
+def apply_restructure_job(job_path: Path) -> str:
+    job = load_json(job_path)
+    pack = load_json(Path(job["evidence_pack_path"]))
+    proposal = load_json(Path(job["proposal_output_path"]))
+    out_dir = ROOT / "wiki" / "restructure"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    report_path = out_dir / f"{pack['family']}.md"
+    report_path.write_text(render_restructure_report(pack, proposal), encoding="utf-8")
+    append_log(f"restructure:{proposal['action']}", pack["family"], str(report_path.relative_to(ROOT)), proposal["reason"])
+    return str(report_path)
+
+
 def parse_iso_date(value: str | None) -> date | None:
     if not value:
         return None
@@ -458,7 +596,11 @@ def lint_report(config: dict[str, Any], families: list[str] | None = None) -> di
     all_bundles = load_bundles(config)
     issues: list[dict[str, Any]] = []
     seen_bundle_ids: set[str] = set()
-    stale_days = int((config.get("lint") or {}).get("stale_days", 10))
+    lint_cfg = config.get("lint") or {}
+    stale_days = int(lint_cfg.get("stale_days", 10))
+    restructure_bundle_count = int(lint_cfg.get("restructure_bundle_count", 10))
+    restructure_topic_count = int(lint_cfg.get("restructure_topic_count", 5))
+    restructure_page_chars = int(lint_cfg.get("restructure_page_chars", 1800))
 
     for family in selected:
         cfg = family_config(config, family)
@@ -491,6 +633,7 @@ def lint_report(config: dict[str, Any], families: list[str] | None = None) -> di
             continue
 
         frontmatter = page.get("frontmatter") or {}
+        signals = page_signals(page, bundles)
         missing_sections = [section for section in cfg["sections"] if section not in (page.get("sections") or [])]
         if missing_sections:
             issues.append(
@@ -540,6 +683,21 @@ def lint_report(config: dict[str, Any], families: list[str] | None = None) -> di
                         "missing_bundle_ids": sorted(current_bundle_ids - page_bundle_ids)[:12],
                         "page_path": str(page_path.relative_to(ROOT)),
                     },
+                }
+            )
+
+        if (
+            signals["bundle_count"] >= restructure_bundle_count
+            and signals["distinct_topics"] >= restructure_topic_count
+            and signals["page_char_count"] >= restructure_page_chars
+        ):
+            issues.append(
+                {
+                    "severity": "warning",
+                    "family": family,
+                    "code": "restructure_candidate",
+                    "message": "Family page looks broad enough to justify split/link review.",
+                    "details": signals,
                 }
             )
 
@@ -605,6 +763,26 @@ def run_query_apply(args: argparse.Namespace) -> int:
     return 0
 
 
+def run_restructure_prepare(args: argparse.Namespace) -> int:
+    config = load_json(CONFIG_PATH)
+    ingest_upstream(config)
+    print(build_restructure_job(config, args.family))
+    return 0
+
+
+def run_restructure_batch(args: argparse.Namespace) -> int:
+    config = load_json(CONFIG_PATH)
+    ingest_upstream(config)
+    families = args.families or family_names(config)
+    print(build_restructure_batch(config, families))
+    return 0
+
+
+def run_restructure_apply(args: argparse.Namespace) -> int:
+    print(apply_restructure_job(Path(args.job)))
+    return 0
+
+
 def run_lint(args: argparse.Namespace) -> int:
     config = load_json(CONFIG_PATH)
     report = lint_report(config, args.families)
@@ -652,6 +830,18 @@ def build_parser() -> argparse.ArgumentParser:
     query_apply = sub.add_parser("query-apply", help="Apply LLM outputs from one query job.")
     query_apply.add_argument("--job", required=True)
     query_apply.set_defaults(func=run_query_apply)
+
+    restructure_prepare = sub.add_parser("restructure-prepare", help="Build one restructure review job for a family.")
+    restructure_prepare.add_argument("--family", required=True)
+    restructure_prepare.set_defaults(func=run_restructure_prepare)
+
+    restructure_batch = sub.add_parser("restructure-batch", help="Build restructure review jobs for multiple families.")
+    restructure_batch.add_argument("--families", nargs="*")
+    restructure_batch.set_defaults(func=run_restructure_batch)
+
+    restructure_apply = sub.add_parser("restructure-apply", help="Apply one restructure proposal into a human-readable report.")
+    restructure_apply.add_argument("--job", required=True)
+    restructure_apply.set_defaults(func=run_restructure_apply)
 
     lint = sub.add_parser("lint", help="Check bundle/page quality gaps.")
     lint.add_argument("--families", nargs="*")

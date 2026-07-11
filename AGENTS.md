@@ -19,7 +19,8 @@ This repository is the clean restart after `openclaw_wiki2`.
 2. `query-prepare` or `query-batch` builds evidence packs and job manifests.
 3. An OpenClaw turn writes decision/render JSON.
 4. `query-apply` writes markdown and updates indexes/logs.
-5. `lint` reports freshness and coverage gaps.
+5. `lint` reports freshness, coverage gaps, and broad-page signals.
+6. `restructure-*` builds and records structure proposals such as split/link candidates.
 
 ## Constraints
 
